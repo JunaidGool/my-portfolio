@@ -1,13 +1,13 @@
 // src/app/layout.tsx
 import type { Metadata } from "next";
-import Link from "next/link";
 import { ReactNode } from "react";
 import { inter, jbmono } from "@/fonts";
 import Providers from "@/providers/theme-provider";
+import Nav from "@/components/Nav";
+import Footer from "@/components/Footer";
 
-import "./globals.css"; // make sure this file exists (Tailwind base)
+import "./globals.css"; // Tailwind base + your globals
 
-/* ---------- optional SEO / social tags ---------- */
 export const metadata: Metadata = {
   title: "Junaid Gool | Portfolio",
   description: "Software engineer building micro-SaaS products.",
@@ -17,37 +17,24 @@ export const metadata: Metadata = {
   },
 };
 
-/* ---------- tiny top-nav shared by every page ---------- */
-function Nav() {
-  return (
-    <header className="w-full border-b bg-white dark:bg-brand-text dark:text-white">
-      <nav className="container mx-auto flex gap-6 py-4">
-        <Link href="/" className="font-bold text-brand-primary-600">
-          Home
-        </Link>
-        <Link href="/products">Products</Link>
-        <Link href="/contact">Contact</Link>
-      </nav>
-    </header>
-  );
-}
-
-/* ---------- root layout wrapper ---------- */
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html
       lang="en"
-      suppressHydrationWarning // ✅ added
+      suppressHydrationWarning
       className={`${inter.variable} ${jbmono.variable}`}
     >
-      <body className="min-h-screen flex flex-col">
+      <body className="min-h-screen flex flex-col bg-brand-bg dark:bg-slate-900 text-brand-text">
         <Providers>
           <Nav />
-          <main className="flex-grow">{children}</main>
+
+          {/* Main content */}
+          <main id="content" className="flex-1">
+            {children}
+          </main>
+
+          {/* Site-wide footer */}
+          <Footer />
         </Providers>
       </body>
     </html>
