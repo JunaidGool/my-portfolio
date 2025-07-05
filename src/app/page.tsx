@@ -90,7 +90,7 @@ export default function Home() {
   return (
     <>
       {/* HERO */}
-      <section className="py-24 lg:py-32 bg-slate-50 dark:bg-slate-900/50">
+      <section className="py-24 lg:py-32 bg-slate-50 ">
         <div className="container mx-auto grid gap-12 md:grid-cols-2 items-center">
           {/* LEFT */}
           <div className="space-y-8 text-center md:text-left">

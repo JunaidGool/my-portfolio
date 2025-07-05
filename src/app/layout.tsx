@@ -24,7 +24,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       suppressHydrationWarning
       className={`${inter.variable} ${jbmono.variable}`}
     >
-      <body className="min-h-screen flex flex-col bg-brand-bg dark:bg-slate-900 text-brand-text">
+      <body className="min-h-screen flex flex-col bg-brand-bg text-brand-text">
         <Providers>
           <Nav />
 
