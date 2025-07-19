@@ -25,7 +25,6 @@ export default function Nav() {
             height={100}
             priority
           />
-          <span className="font-bold text-lg text-gray-900">Portfolio</span>
         </Link>
 
         {/* Desktop CTA */}
