@@ -6,7 +6,7 @@ import Hero from "@/components/Hero";
 import ProductCard from "@/components/ProductCard";
 
 export const metadata: Metadata = {
-  title: "Junaid Gool – Developer Portfolio",
+  title: "Junaid Gool – Software Engineer Portfolio",
   description:
     "Handcrafted micro-SaaS demos (ShapLink & StokFolio), engineering deep dives, and more from Junaid Gool.",
 };
