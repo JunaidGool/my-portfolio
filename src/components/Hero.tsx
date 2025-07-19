@@ -38,13 +38,16 @@ export default function Hero() {
 
           <div className="border-l-2 border-brand-primary-500/70 pl-6 space-y-6">
             <p>
-              My name is <strong>Junaid Gool</strong>. I build micro-SaaS
-              products that turn complex payment workflows into one-click
-              experiences.
+              I'm <strong>Junaid Gool</strong>, a software engineer based in
+              Cape Town, South Africa.
             </p>
             <p>
-              I’m passionate about lean architecture, beautiful interfaces, and
-              code that’s a pleasure to maintain.
+              I care deeply about lean architecture, beautiful interfaces, and
+              writing code thats a pleasure to maintain.
+            </p>
+            <p>
+              Im driven by building real-world solutions for real-world
+              problems, especially those that empower underserved communities.
             </p>
           </div>
 
@@ -77,7 +80,8 @@ export default function Hero() {
           </ul>
 
           <p className="pt-8 text-xs text-brand-text/60">
-            © 2025 junaidgool.com
+            “Simplicity scales. Empathy matters. Thats where good software
+            starts.”
           </p>
         </aside>
       </div>

@@ -88,9 +88,6 @@ export default function Footer() {
 
       {/* Credits */}
       <p className="text-sm mb-1">Handcrafted by me © {year}</p>
-      <p className="text-xs text-white/70">
-        Made with <span className="font-semibold">Bulma</span>
-      </p>
     </footer>
   );
 }
